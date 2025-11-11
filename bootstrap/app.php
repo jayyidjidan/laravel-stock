@@ -16,3 +16,10 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withExceptions(function (Exceptions $exceptions) {
         //
     })->create();
+
+    if (app()->environment('production')) {
+    config([
+        'view.compiled' => realpath(sys_get_temp_dir()),
+    ]);
+}
+
