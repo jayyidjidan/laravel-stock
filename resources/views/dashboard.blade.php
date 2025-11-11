@@ -88,9 +88,9 @@
                                         </span>
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-base font-medium border-b border-gray-200 last:border-b-0">
-                                        <div class="flex gap-2 w-full">
+                                        <div class="flex gap-4 w-full">
                                             <!-- Edit Button -->
-                                            <a href="{{ route('products.edit', $product->id) }}" class="flex items-center justify-center gap-[10px] px-4 py-2 rounded-[24px] bg-[#196BE6] text-white hover:bg-[#155bc7] transition duration-200 text-base font-medium flex-1 min-w-0">
+                                            <a href="{{ route('products.edit', $product->id) }}" class="flex items-center justify-center gap-1 px-4 py-2 rounded-[24px] bg-[#196BE6] text-white hover:bg-[#155bc7] transition duration-200 text-base font-medium flex-1 min-w-0">
                                                 Edit
                                             </a>
                                             
@@ -98,7 +98,7 @@
                                             <form action="{{ route('products.destroy', $product->id) }}" method="POST" class="inline flex-1 min-w-0" onsubmit="return confirmDelete()">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="flex items-center justify-center gap-[10px] w-full px-4 py-2 rounded-[24px] bg-[#E63838] text-white hover:bg-[#d32f2f] transition duration-200 text-base font-medium">
+                                                <button type="submit" class="flex items-center justify-center gap-1 w-full px-4 py-2 rounded-[24px] bg-[#E63838] text-white hover:bg-[#d32f2f] transition duration-200 text-base font-medium">
                                                     Delete
                                                 </button>
                                             </form>
