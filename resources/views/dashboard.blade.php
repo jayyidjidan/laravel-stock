@@ -8,10 +8,8 @@
             <p class="text-gray-600">This is your cafe food stock in this day</p>
         </div>
     
-        <!-- Search Bar Only -->
         <div class="relative">
             <div class="flex items-center py-4 rounded-3xl bg-white border border-gray-300 hover:border-gray-400 transition duration-200 pr-16 pl-12">
-                <!-- Font Awesome Search Icon -->
                 <i class="fas fa-search text-gray-500 absolute left-4"></i>
                 <input 
                     type="text" 
@@ -46,18 +44,13 @@
         </div>
     </div>
 
-        <!-- Tabel di Kanan -->
         <div class="flex-1">
             <div class="bg-white border border-gray-200 rounded-3xl overflow-hidden">
                 <div class="p-6">
-                    <!-- Header dengan judul dan tombol -->
                     <div class="flex justify-between items-center mb-6">
                         <h3 class="text-lg font-semibold text-gray-800">Featured Product</h3>
                         <a href="{{ route('products.create') }}" class="flex items-center gap-[17px] px-6 py-4 rounded-[32px] bg-[#F9744B] text-white hover:bg-[#e8653a] transition duration-200 text-base font-medium">
-                            <!-- Plus Icon -->
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
-                            </svg>
+                            <i class='fa-regular fa-plus'></i>
                             Add Product
                         </a>
                     </div>
